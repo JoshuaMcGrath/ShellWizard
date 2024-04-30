@@ -16,9 +16,9 @@ func main() {
 	//fmt.Println(output)
 	count := 89
 	for count != 100 {
-		//command := input_handler.RequestInput()
-		//output := input_handler.PipeResolver(command)
-		output, _ := input_handler.TryBash()
+		command := input_handler.RequestInput()
+		output := input_handler.PipeResolver(command)
+		//output, _ := input_handler.TryBash()
 		fmt.Println(output)
 	}
 }
